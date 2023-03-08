@@ -98,11 +98,24 @@ h3 {
 }
 
 .row.book-info .img-book-cover{
-    width: 394px;
-    height: 450px;
+    width: 425px;
+    height: 400px;
+    text-decoration: none;
+}
+
+.row.book-info .img-book-cover:nth-child(1){
     padding-left: 40px;
     padding-right: 40px;
-    text-decoration: none;
+}
+
+.row.book-info .img-book-cover:nth-child(2){
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.row.book-info .img-book-cover:nth-child(3){
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .row.book-info .book-item {
@@ -120,5 +133,6 @@ h3 {
     text-align: center;
     margin-bottom: 35px;
 }
+
 
 
