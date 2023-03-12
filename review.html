@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c721466f77.js" crossorigin="anonymous"></script>
+  <title>Bài đánh giá - Books Recommendation</title>
+</head>
+
+<body id="bootstrap-overrides">
+  <div class="contain">
+    <div class="container mt-4">
+      <header class="ct-header">
+        <div class="navbar navbar-expand-lg p-md-3">
+          <a href="./index.html" class="navbar-brand nav-start">Books Recommendation</a>
+          <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./review.html" class="nav-link active text-primary">BÀI ĐÁNH GIÁ</a>
+              </li>
+              <li class="nav-item">
+                <a href="./SignInPage.html" class="nav-link">ĐĂNG NHẬP</a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item">
+                <a href="./SignUpPage.html" class="nav-link">ĐĂNG KÝ</a>
+              </li>
+            </ul>
+            <div id="search-bar">
+              <button input="button" class="btn btn-outline-light text-dark" onclick="searchEngine()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h3 class="heading-3">Danh mục Bài đánh giá</h3>
+    <div class="row book-review gy-5">
+      <div class="col-xxl-4 col-md-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(1)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Bakemonogatari - Thanh xuân “thú vị” bên muôn vàn điều “Quái gỡ”</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/Bakemonogatari.jpg" alt="">
+          </a>
+          <p class="review-content">Giữa thời hiện đại, trong bối cảnh đô thị hết sức bình thường, vậy mà cậu nam sinh
+            Araragi Koyomi lại bắt gặp
+            1001 câu chuyện “quái dị” - ma - thần - quỷ - quái - hay là những thực thể…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(2)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Tiểu thuyết lừng danh Tuổi Thơ Dữ Dội</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/tuoi-tho-du-doi.jpg" alt="">
+          </a>
+          <p class="review-content">Tuổi Thơ Dữ Dội kể lại câu chuyện của Đội Thiếu niên Trinh sát trung đoàn Trần Cao
+            Vân. Khác với những câu
+            chuyện chiến tranh thường thấy, sách không tập trung miêu tả những anh lính cụ Hồ oai…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-12 book-review-item mr-2">
+        <div class="p-3 border bg-light" onclick="getId(3)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Cô Gái Đến Từ Hôm Qua</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/co-gai-den-tu-hom-qua-2.jpg" alt="">
+          </a>
+          <p class="review-content">Nội dung của tác phẩm Cô gái đến từ hôm qua nói về một mối tình hồn nhiên, trong
+            sáng của cậu học sinh cấp ba
+            tên Anh Thư và cô bạn Tiểu Ly. Câu chuyện bắt đầu kể từ khi gia…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(4)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Câu chuyện Cây Cam Ngọt Của Tôi</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/sach-cay-cam-ngot-cua-toi.jpg" alt="">
+          </a>
+          <p class="review-content">Hãy làm quen với Zezé, cậu bé tinh nghịch siêu hạng đồng thời cũng đáng yêu bậc
+            nhất, với ước mơ lớn lên trở
+            thành nhà thơ cổ thắt nơ bướm. Chẳng phải ai cũng công nhận khoản “đáng yêu”…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/ THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(5)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Bố Già - Khí chất của những người đàn ông xuất chúng</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/bogiareviewsachnet.jpg" alt="">
+          </a>
+          <p class="review-content">Tác phẩm viết về gia đình tội phạm Mafia của Mario Puzo nó đặc biệt ở chỗ, viết về
+            Bố già nhưng lại đậm đặc
+            chất đàn ông mà mọi cánh mày râu đều ao ước, và sau tất cả…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(6)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Đồi Gió Hú - phiên bản kinh điển của một tình yêu trần trụi, dữ dội và đầy ám
+              ảnh
+            </p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/doigiohu.jpeg" alt="">
+          </a>
+          <p class="review-content">Nếu như tình yêu của Romeo and Juliet trong tác phẩm cùng tên của đại văn hào người
+            Anh William Shakespeare
+            mang đậm sự lãng mạn và nồng cháy khiến chúng ta đam mê với những hình ảnh và ngôn…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(7)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Vũ Trụ Trong Vỏ Hạt Dẻ - Tác phẩm khoa học phổ biến</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/vutruhatde.jpg" alt="">
+          </a>
+          <p class="review-content">Vũ Trụ Trong Vỏ Hạt Dẻ được xem là cuốn sách mở rộng của Lược sử thời gian. Tuy
+            nhiên, bố cục đã có sự khác
+            biệt. Với cuốn sách trước, tác giả viết theo bố cục tuần tự, chương…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(8)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Đau ơi bay đi! - Cho những thương tổn, bay về hư vô</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/dau-oi-bay-di-ipm-2.jpg" alt="">
+          </a>
+          <p class="review-content">Một chàng trai vô tình trở thành kẻ Sát Nhân trong một đêm anh lái xe sau khi uống
+            rượu vì nỗi thất vọng tột
+            cùng. Nhưng cô gái vốn phải là nạn nhân của anh, lại có khả năng…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(9)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title">
+            <p>Truyện tranh Cuộc Chiến Siêu Nhiên Giữa Đời Thường</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img">
+            <img src="/Assets/Images/cuocchiensieunhan.jpg" alt="">
+          </a>
+          <p class="review-content">Họ sẽ cùng nhau chiến đấu chống lại các thế lực hắc ám để bảo vệ thế giới, vượt qua
+            nhiều trận chiến sinh tử
+            khốc liệt, đánh tan mọi âm mưu đen tối, đấu tranh với nhiều kẻ địch…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-sm-6 col-12 book-review-item">
+        <div class="p-3 border bg-light" onclick="getId(10)">
+          <a href="#" class="review-item">
+            <p>Bài đánh giá</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-title" onclick="loadPage10()">
+            <p>Đánh giá sách Trật Tự Thời Gian</p>
+          </a>
+          <a href="./reviewDetail.html" class="review-img" onclick="loadPage10()">
+            <img src="/Assets/Images/trattuthoigian.jpg" alt="">
+          </a>
+          <p class="review-content">Bất chấp sự quen thuộc và vĩnh hằng, thời gian vẫn là một ẩn số không ngừng đánh đố
+            chúng ta. Các triết gia,
+            nghệ sĩ và nhà thơ từ lâu đã khám phá ý nghĩa của nó, trong khi…</p>
+          <div class="author-time">
+            <a href="#" class="author">BUGCOLORFULL</a>
+            <p class="time">/THÁNG MƯỜI MỘT 25, 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right">
+    <footer class="container">
+      <p class="col-6">Bản quyền 2022</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="./Assets/Js/reviewDetail.js"></script>
+  <script src="./Assets/Js/script.js"></script>
+</body>
+
+</html>

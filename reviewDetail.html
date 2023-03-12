@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Assets/CSS/style.css">
+  <link rel="stylesheet" href="./Assets/CSS/detailReview.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/c721466f77.js" crossorigin="anonymous"></script>
@@ -26,13 +27,13 @@
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="./review.html" class="nav-link">BÀI ĐÁNH GIÁ</a>
+                <a href="./review.html" class="nav-link active text-primary">BÀI ĐÁNH GIÁ</a>
               </li>
               <li class="nav-item">
                 <a href="./SignInPage.html" class="nav-link">ĐĂNG NHẬP</a>
               </li>
               <li class="nav-item">
-                <a href="./Index.html" class="nav-link active text-primary">TRANG CHỦ</a>
+                <a href="./Index.html" class="nav-link">TRANG CHỦ</a>
               </li>
               <li class="nav-item">
                 <a href="./SignUpPage.html" class="nav-link">ĐĂNG KÝ</a>
@@ -43,54 +44,8 @@
       </header>
     </div>
   </div>
-  <div class="container mt-5">
-    <h3 class="heading-3">Trang chủ</h3>
-    <div class="background col-12">
-      <h3 class="text-white">Welcome</h3>
-      <p class="text-white">Hy vọng bạn sẽ tìm được cho mình một cuốn sách hay</p>
-      <button class="btn btn-primary">
-        <a href="./review.html" class="text-white">Đi xem thử</a>
-      </button>
-    </div>
-    <div class="heading">
-      <h3 class="heading-3">Sách mới cập nhật</h3>
-    </div>
-    <div class="row book-info" id="book-information"></div>
-  </div>
-  <div class="container mt-5">
-    <h3 class="heading-3">Bài đánh giá mới</h3>
-    <div class="row">
-      <div class="col-xxl-4 col-md-6 col-sm-12">
-        <a href="./reviewDetail.html" onclick="getId(1)">
-          <img src="./Assets/Data/detailReview/1/img.jpg" alt="" class="img-link">
-          <p>Bakemonogatari - Thanh xuân “thú vị” bên muôn vàn điều “Quái gỡ”</p>
-        </a>
-      </div>
-      <div class="col-xxl-4 col-md-6 col-sm-12">
-        <a href="./reviewDetail.html" onclick="getId(3)">
-          <img src="./Assets/Data/detailReview/3/img.jpg" alt="" class="img-link">
-          <p>Cô Gái Đến Từ Hôm Qua</p>
-        </a>
-      </div>
-      <div class="col-xxl-4 col-md-6 col-sm-12">
-        <a href="./reviewDetail.html" onclick="getId(4)">
-          <img src="./Assets/Data/detailReview/4/img.jpg" alt="" class="img-link">
-          <p>Cây Cam Ngọt Của Tôi</p>
-        </a>
-      </div>
-      <div class="col-xxl-4 col-md-6 col-sm-12">
-        <a href="./reviewDetail.html" onclick="getId(6)">
-          <img src="./Assets/Data/detailReview/6/img.jpg" alt="" class="img-link">
-          <p>Sự Im Lặng Của Bầy Cừu</p>
-        </a>
-      </div>
-      <div class="col-xxl-4 col-md-6 col-sm-12">
-        <a href="./reviewDetail.html" onclick="getId(2)">
-          <img src="./Assets/Data/detailReview/2/img.jpg" alt="" class="img-link">
-          <p> Tuổi Thơ Dữ Dội</p>
-        </a>
-      </div>
-    </div>
+  <div class="container mt-5" id="main">
+
   </div>
   <div class="copy-right">
     <footer class="container">
@@ -106,7 +61,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
-  <script src="./Assets/Js/script.js"></script>
   <script src="./Assets/Js/reviewDetail.js"></script>
 </body>
 
